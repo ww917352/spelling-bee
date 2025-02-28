@@ -10,6 +10,7 @@ packages = [{ include = "app" }]
 python = "^3.11"
 google-generativeai = "^0.8.4"
 google = "^3.0.0"
+python-dotenv = "^1.0.1"
 
 
 [build-system]

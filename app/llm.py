@@ -1,4 +1,5 @@
 import json
+import os
 import re
 import google.generativeai as genai
 
@@ -20,7 +21,10 @@ Also, we have found these words {found_words}, please do not repeat them.
 Output the words in a json list and nothing else.
 """
 
-genai.configure(api_key="AIzaSyBL6O7JQLVRuble5es1phFBfqMD9Z3DJsI")
+API_KEY = os.getenv('GEMINI_API_KEY')
+print(API_KEY)
+
+genai.configure(api_key=API_KEY)
 model = genai.GenerativeModel(model_name='gemini-2.0-flash')
 
 def parse_response(response):

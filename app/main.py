@@ -1,8 +1,12 @@
+from dotenv import load_dotenv
+load_dotenv()
+
 from app.bee import play
 
 
 LETTERS = 'acfilor'
 CENTER = 'c'
+
 
 if __name__ == '__main__':
     found_words = play(LETTERS, CENTER)
