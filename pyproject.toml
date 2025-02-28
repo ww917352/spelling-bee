@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "spelling-bee"
+version = "0.1.0"
+description = ""
+authors = ["Wei Wei <wei.wei01@sap.com>"]
+readme = "README.md"
+packages = [{ include = "app" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+google-generativeai = "^0.8.4"
+google = "^3.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
